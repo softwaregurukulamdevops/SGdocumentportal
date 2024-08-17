@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34931.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentPortel", "DocumentPortel\DocumentPortel.csproj", "{C81532E0-C99F-41AE-B5B6-C1CA59AE36BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C81532E0-C99F-41AE-B5B6-C1CA59AE36BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C81532E0-C99F-41AE-B5B6-C1CA59AE36BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C81532E0-C99F-41AE-B5B6-C1CA59AE36BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C81532E0-C99F-41AE-B5B6-C1CA59AE36BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {184A1604-4C02-4B4F-B24D-87BA21E17AFF}
+	EndGlobalSection
+EndGlobal
