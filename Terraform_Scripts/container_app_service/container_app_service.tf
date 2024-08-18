@@ -4,7 +4,7 @@ provider "azurerm" {
 
 # Define the Resource Group
 resource "azurerm_resource_group" "example" {
-  name     = "rg-bookportal-container-resources"
+  name     = "rg-bookportal-container-resource-con"
   location = "eastus"
 }
 
