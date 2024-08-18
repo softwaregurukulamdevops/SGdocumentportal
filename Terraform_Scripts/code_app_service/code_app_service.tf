@@ -4,7 +4,7 @@ provider "azurerm" {
 
 # Define the Resource Group
 resource "azurerm_resource_group" "example" {
-  name     = "rg-bookportal-resources"
+  name     = "rg-bookportal-resources-doc"
   location = "East US"  # Replace with your desired location
 }
 
