@@ -24,8 +24,14 @@ resource "azurerm_app_service" "container_service" {
   resource_group_name = azurerm_resource_group.example.name
   app_service_plan_id = azurerm_service_plan.linux_plan.id
 
+   app_settings = {
+    "DOCKER_REGISTRY_SERVER_URL"      = "sgtrainingacr.azurecr.io"
+    "DOCKER_REGISTRY_SERVER_USERNAME" = "sgtrainingacr"
+    "DOCKER_REGISTRY_SERVER_PASSWORD" = "YlQF0wFvoLNaPy4ibm4EcmYSHtTNnFFTS6perYo4Nj+ACRBs18c2"
+    "WEBSITES_ENABLE_APP_SERVICE_STORAGE" = "false"
+  }
   site_config {
-    linux_fx_version = "" # No Docker image specified
+    linux_fx_version = "DOCKER|sgtrainingacr.azurecr.io/sgtrainingacr:Latest" # No Docker image specified
   }
 }
 
