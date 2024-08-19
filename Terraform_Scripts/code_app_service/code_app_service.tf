@@ -4,13 +4,13 @@ provider "azurerm" {
 
 # Define the Resource Group
 resource "azurerm_resource_group" "example" {
-  name     = "rg-documentportal-resources-doc"
+  name     = "rg-documentportal-rg"
   location = "East US"  # Replace with your desired location
 }
 
 # Define the Standard App Service Plan
 resource "azurerm_app_service_plan" "standard_plan" {
-  name                = "rg-documentportal-app-service-docpor"
+  name                = "rg-documentportal-app-service"
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
   kind                = "App"
@@ -23,7 +23,7 @@ resource "azurerm_app_service_plan" "standard_plan" {
 
 # Define the Code-based App Service
 resource "azurerm_app_service" "code_service" {
-  name                = "rg-documentportal-code-app-docportal"
+  name                = "rg-documentportal-code-app"
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
   app_service_plan_id = azurerm_app_service_plan.standard_plan.id
