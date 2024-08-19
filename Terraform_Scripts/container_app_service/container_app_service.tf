@@ -4,13 +4,13 @@ provider "azurerm" {
 
 # Define the Resource Group
 resource "azurerm_resource_group" "example" {
-  name     = "rg-documentportal-container-resource-con"
+  name     = "rg-documentportal-rg"
   location = "eastus"
 }
 
 # Define the Linux App Service Plan for Containers
 resource "azurerm_service_plan" "linux_plan" {
-  name                = "rg-documentportal-linux-app-service-doccon"
+  name                = "rg-documentportal-linux-conapp"
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
   os_type             = "Linux"
